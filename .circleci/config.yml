@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: docker:19.03.12-git
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run: docker build -t 42matters-php-sdk-test:0.1.0 -f Dockerfile.test .
+      - run: docker run 42matters-php-sdk-test:0.1.0

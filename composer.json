@@ -1,0 +1,29 @@
+{
+    "name": "kaidoj/42matters-php-sdk",
+    "description": "PHP SKD for 42matters API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kaidoj",
+            "email": "jast112@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "~6.0",
+        "vlucas/phpdotenv": "^5.0.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kaidoj\\SDK\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/"
+        ]
+    }
+}

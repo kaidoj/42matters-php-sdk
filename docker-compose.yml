@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  app:
+    hostname: 42matters-php-sdk
+    container_name: 42matters-php-sdk
+    build: ./
+    ports:
+      - 3000:80
+    volumes:
+      - .env:/var/www/.env:ro

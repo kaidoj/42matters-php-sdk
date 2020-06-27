@@ -1,0 +1,6 @@
+.git
+.vscode
+.idea
+.env
+vendor/
+node_modules/
