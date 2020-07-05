@@ -25,5 +25,6 @@ $resp = $client->lookup()
 | Endpoint | Method | Supported  |
 | :---     | :---  | :---: | 
 | Lookup   | lookup | +    |
-| Reviews  |  |     |
+| Reviews  |  reviews |  +    |
 | Search (text) | search | +   |
+| Advanced query |       |     |
