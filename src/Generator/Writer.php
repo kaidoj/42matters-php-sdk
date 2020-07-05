@@ -34,6 +34,12 @@ class Writer
         $this->loadMethodTemplates();
     }
 
+    /**
+     * Writes endpoint files
+     * @param array $name
+     * @param array $parameters
+     * @return $this
+     */
     public function write(array $name, array $parameters): Writer
     {
         if (empty($name['object'])) {
@@ -64,6 +70,12 @@ class Writer
         return $this;
     }
 
+    /**
+     * Builds method strings using method templates
+     * @param array $name
+     * @param array $parameters
+     * @return string
+     */
     public function buildMethods(array $name, array $parameters): string
     {
         $contents = '';
