@@ -1,7 +1,6 @@
 <?php
 namespace Kaidoj\SDK;
 
-use Kaidoj\SDK\Endpoints\Endpoint;
 use Kaidoj\SDK\Endpoints\EndpointInterface;
 use Kaidoj\SDK\Exceptions\EndpointDoesNotExistException;
 
@@ -46,7 +45,7 @@ class Client
     public function getEndpoint(string $name): string
     {
         $name = str_replace(['-'], [''], ucwords($name));
-        $name = 'Kaidoj\SDK\Endpoints\\' . $name;
+        $name = 'Kaidoj\SDK\Endpoints\\Generated\\' . $name;
         if (!class_exists($name)) {
             throw new EndpointDoesNotExistException($name);
         }

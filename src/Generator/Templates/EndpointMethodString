@@ -1,0 +1,10 @@
+    /**
+     * @param string {paramName}
+     * @return {object}
+     */
+    public function {paramName}(string ${paramName}): {object}
+    {
+        $this->params['{param}'] = ${paramName};
+        return $this;
+    }
+

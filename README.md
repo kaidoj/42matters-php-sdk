@@ -9,6 +9,7 @@ PHP SDK for [https://42matters.com](https://42matters.com/docs/overview) API
 
 - Android [here](docs/android.md)
 - IOS [here](docs/ios.md)
+- Generate endpoints [here](docs/generate-endpoints.md)
 
 ## Example application
 

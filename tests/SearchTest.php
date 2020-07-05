@@ -1,7 +1,7 @@
 <?php
 
 use Kaidoj\SDK\Config;
-use Kaidoj\SDK\Endpoints\Search;
+use Kaidoj\SDK\Endpoints\Generated\Search;
 
 class SearchTest extends BaseTestCase
 {

@@ -1,0 +1,10 @@
+    /**
+     * @param bool {paramName}
+     * @return {object}
+     */
+    public function {paramName}(bool ${paramName} = true): {object}
+    {
+        $this->params['{param}'] = ${paramName};
+        return $this;
+    }
+

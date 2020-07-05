@@ -1,6 +1,6 @@
 <?php
 
-use Kaidoj\SDK\Endpoints\Lookup;
+use Kaidoj\SDK\Endpoints\Generated\Lookup;
 use Kaidoj\SDK\Config;
 
 class LookupTest extends BaseTestCase

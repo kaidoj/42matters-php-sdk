@@ -40,6 +40,8 @@ if (isset($_GET['search'])) {
         $client = new \Kaidoj\SDK\Android($config);
         $resp = $client->search()
             ->query($_GET['search'])
+            ->limit(10)
+            ->page(1)
             ->fetch();
         print_r($resp);
     } catch (Exception $e) {
